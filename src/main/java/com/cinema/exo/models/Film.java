@@ -7,15 +7,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Document
 @Data
+@Document
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class Film {
 
 	@Id
 	private String id;
+	
 	private String titre;
 	private int duree;
 	private int ageLimite;

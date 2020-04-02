@@ -13,11 +13,11 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class Client {
 
 	@Id
 	private String id;
+	
 	private String nom;
 	private boolean etudiant;
 	private LocalDate naissance;

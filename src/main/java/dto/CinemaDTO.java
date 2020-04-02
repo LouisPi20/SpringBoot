@@ -1,7 +1,9 @@
-package com.cinema.exo.models;
+package dto;
 
-import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import com.cinema.exo.models.Cinema;
+import com.cinema.exo.models.Salle;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,13 +13,12 @@ import lombok.NoArgsConstructor;
 @Document
 @NoArgsConstructor
 @AllArgsConstructor
-public class Cinema {
-	
-	@Id
-	private String id;
-	
-	private String nom;
-	private String adresse;
-	
+public class CinemaDTO {
 
+	private Cinema cinema;
+	private Salle[] salle;
+	
+	
 }
+
+
